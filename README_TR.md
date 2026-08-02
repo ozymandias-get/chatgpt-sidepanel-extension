@@ -4,12 +4,14 @@
 
 # 🤖 ChatGPT Chrome Kenar Paneli ve Akıllı Web Sayfası Ayıklayıcısı
 
+> [!CAUTION]
+> **YASAL UYARI & DİSCLAIMER**  
+> Bu uzantı **OpenAI veya ChatGPT'nin resmi bir ürünü ya da resmi eklentisi DEĞİLDİR**. OpenAI / ChatGPT markaları ile hiçbir resmi bağı veya ortaklığı yoktur. Kullanıcıların ChatGPT web arayüzünü tarayıcı kenar panelinde daha rahat kullanabilmesi amacıyla bağımsız olarak geliştirilmiş açık kaynaklı bir Chrome uzantısıdır.
+
 [![Chrome Manifest V3](https://img.shields.io/badge/Manifest-V3-brightgreen.svg)](https://developer.chrome.com/docs/extensions/mv3/intro/)
 [![Sürüm](https://img.shields.io/badge/sürüm-1.4-blue.svg)](./manifest.json)
 [![Doğrudan İndir](https://img.shields.io/badge/İndir-v1.4%20ZIP-green.svg)](https://github.com/ozymandias-get/chatgpt-sidepanel-extension/releases/download/v1.4/chatgpt-sidepanel-extension-v1.4.zip)
 [![Lisans](https://img.shields.io/badge/lisans-MIT-orange.svg)](./README_TR.md#lisans)
-
-**ChatGPT Kenar Paneli**, Google Chrome üzerinde gezinirken tek bir klavye kısayolu (`Alt+Shift+C`) veya tarayıcı simgesiyle ChatGPT'yi yan panelde anında açmanızı sağlayan; web sayfalarının, haberlerin, e-postaların ve sosyal medya akışlarının içeriğini **Mozilla Readability** motoruyla çöplerden arındırıp **Markdown** formatında ChatGPT'ye aktaran gelişmiş bir Chrome uzantısıdır (Manifest V3).
 
 ---
 

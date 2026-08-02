@@ -4,12 +4,14 @@
 
 # 🤖 ChatGPT Chrome Side Panel & Smart Web Extractor
 
+> [!CAUTION]
+> **DISCLAIMER & LEGAL NOTICE**  
+> This extension is **NOT an official product or official extension of OpenAI or ChatGPT**. It is an independent, open-source productivity tool developed to embed ChatGPT's web interface into Chrome's native side panel. All product names, logos, and brands are property of their respective owners.
+
 [![Chrome Manifest V3](https://img.shields.io/badge/Manifest-V3-brightgreen.svg)](https://developer.chrome.com/docs/extensions/mv3/intro/)
 [![Version](https://img.shields.io/badge/version-1.4-blue.svg)](./manifest.json)
 [![Direct Download](https://img.shields.io/badge/Download-v1.4%20ZIP-green.svg)](https://github.com/ozymandias-get/chatgpt-sidepanel-extension/releases/download/v1.4/chatgpt-sidepanel-extension-v1.4.zip)
 [![License](https://img.shields.io/badge/license-MIT-orange.svg)](./README.md#license)
-
-**ChatGPT Side Panel & Web Extractor** is a high-performance Chrome extension (Manifest V3) that lets you open ChatGPT instantly in your browser's side panel using a hotkey (`Alt+Shift+C`) or toolbar click. It includes a powerful, noise-free web content extractor powered by **Mozilla Readability** and **GFM Markdown**, allowing you to transfer clean web page contents, articles, emails, or tweets directly into ChatGPT with one click.
 
 ---
 
