@@ -6,19 +6,33 @@
 
 [![Chrome Manifest V3](https://img.shields.io/badge/Manifest-V3-brightgreen.svg)](https://developer.chrome.com/docs/extensions/mv3/intro/)
 [![Sürüm](https://img.shields.io/badge/sürüm-1.4-blue.svg)](./manifest.json)
+[![Doğrudan İndir](https://img.shields.io/badge/İndir-v1.4%20ZIP-green.svg)](https://github.com/ozymandias-get/chatgpt-sidepanel-extension/releases/download/v1.4/chatgpt-sidepanel-extension-v1.4.zip)
 [![Lisans](https://img.shields.io/badge/lisans-MIT-orange.svg)](./README_TR.md#lisans)
-[![Dil Desteği](https://img.shields.io/badge/dil-Türkçe%20%7C%20English-purple.svg)](./_locales/)
 
 **ChatGPT Kenar Paneli**, Google Chrome üzerinde gezinirken tek bir klavye kısayolu (`Alt+Shift+C`) veya tarayıcı simgesiyle ChatGPT'yi yan panelde anında açmanızı sağlayan; web sayfalarının, haberlerin, e-postaların ve sosyal medya akışlarının içeriğini **Mozilla Readability** motoruyla çöplerden arındırıp **Markdown** formatında ChatGPT'ye aktaran gelişmiş bir Chrome uzantısıdır (Manifest V3).
+
+---
+
+## 📦 Doğrudan İndirme ve Hızlı Kurulum (Tavsiye Edilen)
+
+Kod derlemekle veya klonlamakla uğraşmadan eklentiyi doğrudan kullanmak için:
+
+1. 📥 **[En Son Sürüm ZIP Dosyasını İndirin (v1.4 ZIP)](https://github.com/ozymandias-get/chatgpt-sidepanel-extension/releases/download/v1.4/chatgpt-sidepanel-extension-v1.4.zip)**  
+   *(Veya [Releases Sayfasından](https://github.com/ozymandias-get/chatgpt-sidepanel-extension/releases/latest) en son `chatgpt-sidepanel-extension-v1.4.zip` dosyasını indirin).*
+2. 📂 İndirdiğiniz `.zip` dosyasını bilgisayarınızda herhangi bir klasöre çıkartın.
+3. 🌐 Chrome tarayıcınızda `chrome://extensions` adresine gidin.
+4. ⚙️ Sağ üst köşedeki **Geliştirici modu** (Developer mode) anahtarını açık konuma getirin.
+5. 📁 Sol üstteki **Paketlenmemiş öğe yükle** (Load unpacked) butonuna tıklayıp zipten çıkardığınız klasörü seçin.
+6. 🎉 **Tebrikler!** `Alt+Shift+C` tuşlarına basarak kenar panelini hemen kullanmaya başlayabilirsiniz.
 
 ---
 
 ## 🌟 Neden Bu Eklenti?
 
 Klasik eklentilerin aksine bu proje:
-1. **Sekme Değiştirme Derdine Son Verir**: ChatGPT ekranı her zaman tarayıcının sağ kenarında sabit veya açılır kapa formda yanınızdadır.
+1. **Sekme Değiştirme Derdine Son Verir**: ChatGPT ekranı her zaman tarayıcının sağ kenarında sabit veya açılır kapar formda yanınızdadır.
 2. **Web Sayfalarını Çöpsüz Aktarır**: Web sitelerindeki reklamlar, çerez pencereleri, yan menüler ve alt bilgiler elenir. ChatGPT'ye yalnızca sayfanın gerçek makale/içerik gövdesi gönderilir.
-3. **Tablo ve Kod Bloklarını Korumaktadır**: E-ticaret ürün karşılaştırmaları, teknik özellik tabloları ve yazılım kodları Markdown formatında bozulmadan iletilir.
+3. **Tablo ve Kod Bloklarını Korur**: E-ticaret ürün karşılaştırmaları, teknik özellik tabloları ve yazılım kodları Markdown formatında bozulmadan iletilir.
 4. **Resmi ChatGPT Temasıyla Uumludur**: ChatGPT'nin orijinal koyu teması (`#212121` ve `#171717`) ile birebir estetik uyum sağlar.
 
 ---
@@ -45,26 +59,6 @@ Klasik eklentilerin aksine bu proje:
 
 ---
 
-## 🛠️ Kurulum Adımları
-
-Eklentiyi bilgisayarınıza kurup çalıştırmak için şu adımları izleyin:
-
-1. **Repoyu Bilgisayarınıza İndirin**:
-   ```bash
-   git clone https://github.com/ozymandias-get/chatgpt-sidepanel-extension.git
-   ```
-2. **Chrome Uzantılar Sayfasını Açın**:
-   - Adres çubuğuna `chrome://extensions` yazın ve `Enter` tuşuna basın.
-3. **Geliştirici Modunu Açın**:
-   - Sayfanın sağ üst köşesindeki **Geliştirici modu** (Developer mode) anahtarını açık konuma getirin.
-4. **Eklentiyi Yükleyin**:
-   - Sol üstte beliren **Paketlenmemiş öğe yükle** (Load unpacked) butonuna tıklayın.
-   - İndirdiğiniz `chatgpt-sidepanel-extension` klasörünü seçin.
-5. **Kullanmaya Başlayın!**
-   - Sağ üstteki uzantı simgesine tıklayın veya `Alt+Shift+C` kısayoluna basın.
-
----
-
 ## 🖱️ Kullanım Rehberi
 
 | Aksiyon | Nasıl Yapılır? |
@@ -83,8 +77,6 @@ Eklentiyi bilgisayarınıza kurup çalıştırmak için şu adımları izleyin:
 | Kısayol | İşlev |
 |---|---|
 | `Alt + Shift + C` | ChatGPT Kenar Panelini Aç / Kapat |
-
-*(İsteğe bağlı olarak `chrome://extensions/shortcuts` adresinden kısayolu değiştirebilirsiniz).*
 
 ---
 
@@ -116,30 +108,6 @@ chatgpt-sidepanel-extension/
 
 ---
 
-## ⚙️ Geliştiriciler İçin Derleme (Build)
-
-Eğer `src/extractor.js` dosyasında değişiklik yaparsanız, `dom-extractor.js` dosyasını yeniden derlemek için şu komutu çalıştırabilirsiniz:
-
-```bash
-# Bağımlılıkları yükleyin
-npm install
-
-# Modüler motoru derleyin
-npx esbuild src/extractor.js --bundle --format=iife --outfile=dom-extractor.js
-```
-
----
-
-## ❓ Sıkça Sorulan Sorular (SSS)
-
-**S: ChatGPT oturumu gerekli mi?**  
-C: Evet, kenar paneli ChatGPT'nin resmi web arayüzünü yükler. Bir kez oturum açmanız yeterlidir.
-
-**S: Verilerim herhangi bir sunucuya gönderiliyor mu?**  
-C: Hayır! Tüm sayfa okuma ve ayıklama işlemleri %100 yerel olarak tarayıcınızın içinde gerçekleşir.
-
----
-
 ## 📜 Lisans
 
-Bu proje [MIT Lisansı](./README_TR.md) ile lisanslanmıştır. Serbestçe kullanabilir, geliştirebilir ve paylaşabilirsiniz.
+Bu proje [MIT Lisansı](./README_TR.md) ile lisanslanmıştır.

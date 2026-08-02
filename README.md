@@ -6,10 +6,24 @@
 
 [![Chrome Manifest V3](https://img.shields.io/badge/Manifest-V3-brightgreen.svg)](https://developer.chrome.com/docs/extensions/mv3/intro/)
 [![Version](https://img.shields.io/badge/version-1.4-blue.svg)](./manifest.json)
+[![Direct Download](https://img.shields.io/badge/Download-v1.4%20ZIP-green.svg)](https://github.com/ozymandias-get/chatgpt-sidepanel-extension/releases/download/v1.4/chatgpt-sidepanel-extension-v1.4.zip)
 [![License](https://img.shields.io/badge/license-MIT-orange.svg)](./README.md#license)
-[![Languages](https://img.shields.io/badge/i18n-English%20%7C%20Turkish-purple.svg)](./_locales/)
 
 **ChatGPT Side Panel & Web Extractor** is a high-performance Chrome extension (Manifest V3) that lets you open ChatGPT instantly in your browser's side panel using a hotkey (`Alt+Shift+C`) or toolbar click. It includes a powerful, noise-free web content extractor powered by **Mozilla Readability** and **GFM Markdown**, allowing you to transfer clean web page contents, articles, emails, or tweets directly into ChatGPT with one click.
+
+---
+
+## 📦 Direct Download & Quick Installation (Recommended)
+
+To install and use the extension immediately without building source code:
+
+1. 📥 **[Download Latest Release ZIP (v1.4 ZIP)](https://github.com/ozymandias-get/chatgpt-sidepanel-extension/releases/download/v1.4/chatgpt-sidepanel-extension-v1.4.zip)**  
+   *(Or visit the [Releases Page](https://github.com/ozymandias-get/chatgpt-sidepanel-extension/releases/latest) to grab `chatgpt-sidepanel-extension-v1.4.zip`).*
+2. 📂 Extract the `.zip` file to any folder on your computer.
+3. 🌐 Open Chrome and navigate to `chrome://extensions`.
+4. ⚙️ Enable **Developer Mode** toggle in the top-right corner.
+5. 📁 Click **Load unpacked** in the top-left corner and select the extracted folder.
+6. 🎉 **Done!** Press `Alt+Shift+C` to open the side panel and start chatting!
 
 ---
 
@@ -43,26 +57,6 @@
 
 ---
 
-## 🛠️ Installation Guide
-
-Follow these simple steps to install the extension in Google Chrome:
-
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/ozymandias-get/chatgpt-sidepanel-extension.git
-   ```
-2. **Open Chrome Extensions Page**:
-   - Navigate to `chrome://extensions` in your Chrome address bar.
-3. **Enable Developer Mode**:
-   - Toggle the **Developer mode** switch in the top-right corner.
-4. **Load the Extension**:
-   - Click **Load unpacked** in the top-left corner.
-   - Select the downloaded `chatgpt-sidepanel-extension` directory.
-5. **Start Chatting!**
-   - Click the extension icon or press `Alt+Shift+C` to open the ChatGPT Side Panel!
-
----
-
 ## 🖱️ How to Use
 
 | Action | How to Trigger |
@@ -81,8 +75,6 @@ Follow these simple steps to install the extension in Google Chrome:
 | Shortcut | Action |
 |---|---|
 | `Alt + Shift + C` | Open / Close ChatGPT Side Panel |
-
-*(You can customize this shortcut anytime at `chrome://extensions/shortcuts`).*
 
 ---
 
@@ -114,30 +106,6 @@ chatgpt-sidepanel-extension/
 
 ---
 
-## ⚙️ Build Instructions for Developers
-
-If you modify `src/extractor.js`, rebuild `dom-extractor.js` using `esbuild`:
-
-```bash
-# Install dependencies
-npm install
-
-# Build bundled extractor script
-npx esbuild src/extractor.js --bundle --format=iife --outfile=dom-extractor.js
-```
-
----
-
-## ❓ Frequently Asked Questions (FAQ)
-
-**Q: Do I need a ChatGPT account?**  
-A: Yes, the side panel loads the official ChatGPT web interface. You only need to sign in once.
-
-**Q: Is my data sent to any third-party server?**  
-A: No! All DOM extraction and text sanitization happen 100% locally inside your Chrome browser.
-
----
-
 ## 📜 License
 
-This project is licensed under the [MIT License](./README.md#license). Feel free to use, modify, and distribute it!
+This project is licensed under the [MIT License](./README.md#license).
