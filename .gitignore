@@ -1,3 +1,11 @@
+# Dependencies & Build Output
 node_modules/
+*.zip
+
+# Chrome Runtime Generated Metadata
+_metadata/
+
+# OS & System Junk
 .DS_Store
+Thumbs.db
 *.log
