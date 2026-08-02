@@ -15,6 +15,12 @@
 
 ---
 
+## 📸 Interface Preview
+
+![ChatGPT Side Panel Interface Preview](./assets/preview.png)
+
+---
+
 ## 📦 Direct Download & Quick Installation (Recommended)
 
 To install and use the extension immediately without building source code:
@@ -87,6 +93,8 @@ chatgpt-sidepanel-extension/
 ├── _locales/
 │   ├── tr/messages.json       # Turkish locale strings
 │   └── en/messages.json       # English locale strings
+├── assets/
+│   └── preview.png            # Interface preview screenshot
 ├── icons/
 │   ├── chatgpt_official.svg   # Official OpenAI vector logo
 │   ├── icon16.png             # 16px extension icon

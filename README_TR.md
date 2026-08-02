@@ -15,6 +15,12 @@
 
 ---
 
+## 📸 Ekran Görüntüsü
+
+![ChatGPT Kenar Paneli Arayüz Görünümü](./assets/preview.png)
+
+---
+
 ## 📦 Doğrudan İndirme ve Hızlı Kurulum (Tavsiye Edilen)
 
 Kod derlemekle veya klonlamakla uğraşmadan eklentiyi doğrudan kullanmak için:
@@ -89,6 +95,8 @@ chatgpt-sidepanel-extension/
 ├── _locales/
 │   ├── tr/messages.json       # Türkçe yerelleştirme metinleri
 │   └── en/messages.json       # İngilizce yerelleştirme metinleri
+├── assets/
+│   └── preview.png            # Arayüz ekran görüntüsü
 ├── icons/
 │   ├── chatgpt_official.svg   # Orijinal OpenAI vektör logosu
 │   ├── icon16.png             # 16px simge
