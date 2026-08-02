@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChatGPT Kenar Paneli — Ayarlar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-primary: #09090b;
+      --accent-emerald: #10a37f;
+      --accent-glow: rgba(16, 163, 127, 0.3);
+      --card-bg: rgba(18, 18, 22, 0.85);
+      --border-light: rgba(255, 255, 255, 0.08);
+      --text-main: #f4f4f5;
+      --text-muted: #a1a1aa;
+      --text-subtle: #71717a;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: radial-gradient(circle at top center, #14141a 0%, var(--bg-primary) 100%);
+      color: var(--text-main);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 460px;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 28px;
+    }
+
+    .header-icon {
+      width: 44px;
+      height: 44px;
+      background: rgba(16, 163, 127, 0.12);
+      border: 1px solid rgba(16, 163, 127, 0.3);
+      color: var(--accent-emerald);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 20px rgba(16, 163, 127, 0.25);
+    }
+
+    .header-text h1 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #ffffff;
+      letter-spacing: -0.3px;
+    }
+
+    .header-text p {
+      font-size: 12.5px;
+      color: var(--text-subtle);
+      margin-top: 2px;
+    }
+
+    .card {
+      background: var(--card-bg);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid var(--border-light);
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6);
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .row {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .row-divider {
+      height: 1px;
+      background: var(--border-light);
+    }
+
+    .label {
+      font-size: 14.5px;
+      font-weight: 600;
+      color: #ffffff;
+    }
+
+    .hint {
+      font-size: 12.5px;
+      color: var(--text-subtle);
+      margin-top: 6px;
+      line-height: 1.5;
+    }
+
+    /* Switch toggle */
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 46px;
+      height: 26px;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .switch input { opacity: 0; width: 0; height: 0; }
+    .slider {
+      position: absolute;
+      inset: 0;
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 26px;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      cursor: pointer;
+    }
+    .slider::before {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      left: 2px;
+      top: 2px;
+      background: #ffffff;
+      border-radius: 50%;
+      transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+    }
+    .switch input:checked + .slider {
+      background: var(--accent-emerald);
+      border-color: var(--accent-emerald);
+      box-shadow: 0 0 16px rgba(16, 163, 127, 0.45);
+    }
+    .switch input:checked + .slider::before { transform: translateX(20px); }
+
+    /* Shortcut badge */
+    .shortcut-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      padding: 4px 8px;
+      border-radius: 6px;
+      font-size: 11.5px;
+      font-weight: 600;
+      color: var(--text-muted);
+      font-family: monospace;
+    }
+
+    .shortcut-badge kbd {
+      background: rgba(255, 255, 255, 0.12);
+      border-radius: 4px;
+      padding: 2px 5px;
+      color: #ffffff;
+    }
+
+    .status-msg {
+      margin-top: 18px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent-emerald);
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 6px;
+      opacity: 0;
+      transform: translateY(4px);
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .status-msg.show { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="header-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M22.2819 9.8211a5.9847 5.9847 0 0 0-.5157-4.9108 6.0462 6.0462 0 0 0-6.5098-2.9A6.0651 6.0651 0 0 0 4.9807 4.1818a5.9847 5.9847 0 0 0-3.9977 2.9 6.0462 6.0462 0 0 0 .7427 7.0966 5.98 5.98 0 0 0 .511 4.9107 6.051 6.051 0 0 0 6.5146 2.9001A5.9847 5.9847 0 0 0 13.2599 24a6.0557 6.0557 0 0 0 5.7718-4.2058 5.9894 5.9894 0 0 0 3.9977-2.9001 6.0557 6.0557 0 0 0-.7475-7.0729zm-9.022 12.6081a4.4755 4.4755 0 0 1-2.8764-1.0408l.1419-.0804 4.7783-2.7582a.7948.7948 0 0 0 .3927-.6813v-6.7369l2.02 1.1686a.071.071 0 0 1 .038.052v5.5826a4.504 4.504 0 0 1-4.4945 4.4944zm-9.6607-4.1254a4.4708 4.4708 0 0 1-.535-3.0137l.142.0852 4.783 2.7582a.7712.7712 0 0 0 .7806 0l5.8428-3.3685v2.3324a.0804.0804 0 0 1-.0332.0615L9.74 19.9502a4.4992 4.4992 0 0 1-6.1408-1.6464zM2.3423 9.717a4.4755 4.4755 0 0 1 2.337-1.973l-.0047.1657v5.5163a.7806.7806 0 0 0 .3928.6813l5.8428 3.3686-2.0153 1.1638a.0757.0757 0 0 1-.071 0l-4.8303-2.7913A4.4944 4.4944 0 0 1 2.3423 9.717zm16.8525 3.468-5.838-3.3685 2.0153-1.1639a.0757.0757 0 0 1 .071 0l4.8303 2.7913a4.4944 4.4944 0 0 1-.6767 8.1042v-5.682a.7806.7806 0 0 0-.4019-.6812zm2.0106-3.1316l-.142-.0852-4.7735-2.7582a.7712.7712 0 0 0-.7806 0L9.6565 10.579V8.2466a.0804.0804 0 0 1 .0332-.0615l4.8303-2.7866a4.5 4.5 0 0 1 6.6805 4.6657zm-8.9748-8.5284a4.4708 4.4708 0 0 1 2.8764 1.0408l-.1419.0804-4.7783 2.7583a.7948.7948 0 0 0-.3927.6813v6.7369l-2.02-1.1687a.071.071 0 0 1-.038-.052V6.0504a4.504 4.504 0 0 1 4.4945-4.4944zm-3.3265 10.976l2.8575-1.65 2.8576 1.65v3.3002l-2.8576 1.65-2.8575-1.65z"/>
+        </svg>
+      </div>
+      <div class="header-text">
+        <h1>Eklenti Ayarları</h1>
+        <p>ChatGPT kenar paneli davranışlarını özelleştirin</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="row">
+        <div>
+          <div class="label">Otomatik Gönder</div>
+          <div class="hint">Sağ tık menüsünden veya metin seçiminden aktarılan metinler ChatGPT'ye otomatik olarak gönderilsin. Kapalıysa sadece metin alanına eklenir.</div>
+        </div>
+        <label class="switch">
+          <input type="checkbox" id="auto-send">
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="row-divider"></div>
+
+      <div class="row">
+        <div>
+          <div class="label">Klavye Kısayolu</div>
+          <div class="hint">Kenar panelini dilediğiniz an hızlıca açıp kapatmak için tanımlı klavye kısayolu.</div>
+        </div>
+        <div class="shortcut-badge">
+          <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>C</kbd>
+        </div>
+      </div>
+    </div>
+
+    <div id="status" class="status-msg">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+      Ayar başarıyla kaydedildi
+    </div>
+  </div>
+
+  <script src="options.js"></script>
+</body>
+</html>

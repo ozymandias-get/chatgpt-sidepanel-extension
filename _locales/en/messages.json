@@ -1,0 +1,118 @@
+{
+  "extName": {
+    "message": "ChatGPT Side Panel - AI Assistant",
+    "description": "Extension name"
+  },
+  "extDesc": {
+    "message": "Open ChatGPT instantly in Chrome side panel. Transfer webpage text and full page context to ChatGPT with one click.",
+    "description": "Extension description"
+  },
+  "extActionTitle": {
+    "message": "ChatGPT Side Panel (Alt+Shift+C)",
+    "description": "Extension action tooltip"
+  },
+  "online": {
+    "message": "Online",
+    "description": "Online status badge"
+  },
+  "sendPage": {
+    "message": "Send Page",
+    "description": "Send page button tooltip"
+  },
+  "newChat": {
+    "message": "New Chat",
+    "description": "New chat button tooltip"
+  },
+  "reload": {
+    "message": "Reload",
+    "description": "Reload button tooltip"
+  },
+  "openTab": {
+    "message": "Open in Tab",
+    "description": "Open in tab button tooltip"
+  },
+  "autoSendOn": {
+    "message": "Auto Send: On",
+    "description": "Auto send on tooltip"
+  },
+  "autoSendOff": {
+    "message": "Auto Send: Off",
+    "description": "Auto send off tooltip"
+  },
+  "loadingTitle": {
+    "message": "Loading ChatGPT",
+    "description": "Loading overlay title"
+  },
+  "loadingDesc": {
+    "message": "Establishing secure side panel connection...",
+    "description": "Loading overlay description"
+  },
+  "errorTitle": {
+    "message": "Unable to Connect",
+    "description": "Error overlay title"
+  },
+  "errorDesc": {
+    "message": "You may not be signed in or the connection timed out.",
+    "description": "Error overlay description"
+  },
+  "retry": {
+    "message": "Retry",
+    "description": "Retry button"
+  },
+  "toastTextTransferred": {
+    "message": "Text transferred to ChatGPT",
+    "description": "Toast message text transferred"
+  },
+  "toastExtracting": {
+    "message": "Extracting page content...",
+    "description": "Toast message extracting"
+  },
+  "toastTransferring": {
+    "message": "Transferring to ChatGPT...",
+    "description": "Toast message transferring"
+  },
+  "noTabFound": {
+    "message": "Active tab not found",
+    "description": "Active tab error"
+  },
+  "internalPagesBlocked": {
+    "message": "Cannot extract browser internal pages",
+    "description": "Internal pages error"
+  },
+  "cannotExtractText": {
+    "message": "Could not extract page text",
+    "description": "Text extract error"
+  },
+  "extractError": {
+    "message": "Could not send page (Please reload extension)",
+    "description": "Page send error"
+  },
+  "contextMenuAskText": {
+    "message": "Send Selected Text to ChatGPT",
+    "description": "Context menu selection title"
+  },
+  "contextMenuAskPage": {
+    "message": "Analyze Current Page with ChatGPT",
+    "description": "Context menu page title"
+  },
+  "webPageAnalysisTitle": {
+    "message": "Web Page Analysis",
+    "description": "Analysis prompt title"
+  },
+  "titleLabel": {
+    "message": "Title",
+    "description": "Title label"
+  },
+  "urlLabel": {
+    "message": "URL",
+    "description": "URL label"
+  },
+  "contentLabel": {
+    "message": "Page Content",
+    "description": "Page content label"
+  },
+  "promptSuffix": {
+    "message": "Please analyze this webpage in detail and summarize it for me.",
+    "description": "Prompt closing phrase"
+  }
+}

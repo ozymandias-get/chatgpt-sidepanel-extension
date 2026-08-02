@@ -1,0 +1,118 @@
+{
+  "extName": {
+    "message": "ChatGPT Kenar Paneli - Yapay Zeka Asistanı",
+    "description": "Eklenti adı"
+  },
+  "extDesc": {
+    "message": "ChatGPT'yi Chrome kenar çubuğunda anında açın. Web sayfalarındaki seçili metinleri tek tıkla ChatGPT'ye aktarın ve kesintisiz sohbet edin.",
+    "description": "Eklenti açıklaması"
+  },
+  "extActionTitle": {
+    "message": "ChatGPT Kenar Paneli (Alt+Shift+C)",
+    "description": "Eklenti buton başlığı"
+  },
+  "online": {
+    "message": "Çevrimiçi",
+    "description": "Çevrimiçi rozeti"
+  },
+  "sendPage": {
+    "message": "Sayfayı Aktar",
+    "description": "Sayfayı aktar butonu ipucu"
+  },
+  "newChat": {
+    "message": "Yeni Sohbet",
+    "description": "Yeni sohbet butonu ipucu"
+  },
+  "reload": {
+    "message": "Yenile",
+    "description": "Yenile butonu ipucu"
+  },
+  "openTab": {
+    "message": "Sekmede Aç",
+    "description": "Sekmede aç butonu ipucu"
+  },
+  "autoSendOn": {
+    "message": "Otomatik Gönder: Açık",
+    "description": "Otomatik gönder açık ipucu"
+  },
+  "autoSendOff": {
+    "message": "Otomatik Gönder: Kapalı",
+    "description": "Otomatik gönder kapalı ipucu"
+  },
+  "loadingTitle": {
+    "message": "ChatGPT Yükleniyor",
+    "description": "Yükleniyor başlığı"
+  },
+  "loadingDesc": {
+    "message": "Güvenli kenar paneli bağlantısı kuruluyor...",
+    "description": "Yükleniyor açıklaması"
+  },
+  "errorTitle": {
+    "message": "ChatGPT Bağlanamadı",
+    "description": "Hata başlığı"
+  },
+  "errorDesc": {
+    "message": "Oturum açık olmayabilir veya bağlantı zaman aşımına uğramış olabilir.",
+    "description": "Hata açıklaması"
+  },
+  "retry": {
+    "message": "Tekrar Dene",
+    "description": "Tekrar dene butonu"
+  },
+  "toastTextTransferred": {
+    "message": "Metin ChatGPT'ye aktarıldı",
+    "description": "Toast mesajı metin aktarıldı"
+  },
+  "toastExtracting": {
+    "message": "Sayfa içeriği ayıklanıyor...",
+    "description": "Toast mesajı sayfa ayıklanıyor"
+  },
+  "toastTransferring": {
+    "message": "Metin ChatGPT'ye aktarılıyor...",
+    "description": "Toast mesajı aktarılıyor"
+  },
+  "noTabFound": {
+    "message": "Aktif sekme bulunamadı",
+    "description": "Aktif sekme bulunamadı hatası"
+  },
+  "internalPagesBlocked": {
+    "message": "Tarayıcı iç sayfaları aktarılamaz",
+    "description": "İç sayfalar aktarılamaz hatası"
+  },
+  "cannotExtractText": {
+    "message": "Sayfa metni alınamadı",
+    "description": "Metin alınamadı hatası"
+  },
+  "extractError": {
+    "message": "Sayfa aktarılamadı (Eklentiyi yenileyin)",
+    "description": "Sayfa aktarılamadı hatası"
+  },
+  "contextMenuAskText": {
+    "message": "Seçili Metni ChatGPT'ye Gönder",
+    "description": "Sağ tık seçili metin menü başlığı"
+  },
+  "contextMenuAskPage": {
+    "message": "Mevcut Sayfayı ChatGPT ile Analiz Et",
+    "description": "Sağ tık sayfa analiz menü başlığı"
+  },
+  "webPageAnalysisTitle": {
+    "message": "Web Sayfası Analizi",
+    "description": "Analiz başlığı"
+  },
+  "titleLabel": {
+    "message": "Başlık",
+    "description": "Başlık etiketi"
+  },
+  "urlLabel": {
+    "message": "Bağlantı",
+    "description": "Bağlantı etiketi"
+  },
+  "contentLabel": {
+    "message": "Sayfa İçeriği",
+    "description": "Sayfa içeriği etiketi"
+  },
+  "promptSuffix": {
+    "message": "Lütfen bu web sayfasını detaylı analiz et ve bana özetle.",
+    "description": "Prompt kapanış cümlesi"
+  }
+}
